@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahim Sathya Prakash – Adobe Workfront Senior Developer</title>
+<meta name="description" content="Portfolio of Mahim Sathya Prakash, an Adobe Workfront senior developer in Bengaluru working on workflow automation and enterprise integrations.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234D5966'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23B5C8D4' font-family='Georgia,serif'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--slate-blue:#728AA0;--mist-blue:#B5C8D4;--stone:#BFB5AE;--deep-slate:#4D5966;--ash:#A9A9A9;
+--ink:#2B343D;--paper:#F3F6F8;
+--bg:var(--paper);--surface:#fff;--text:var(--deep-slate);--head:var(--ink);--label:var(--deep-slate);--line:var(--stone);
+--shadow:rgba(43,52,61,.28);--focus:var(--deep-slate);--btn-bg:var(--deep-slate);--btn-fg:var(--paper);
+--box:color-mix(in srgb,var(--mist-blue) 40%,#fff);
+--cv-bg:color-mix(in srgb,var(--stone) 38%,#fff);
+--fs-label:.75rem;--fs-body:1.0625rem;--fs-h3:1.5rem;--fs-h2:clamp(2rem,4.5vw,3rem);--fs-h1:clamp(3rem,7.5vw,5.75rem);
+--sans:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--serif:Fraunces,Georgia,"Times New Roman",serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1E252C;--surface:#28313A;--text:#D5E0E7;--head:var(--paper);--label:var(--mist-blue);--line:#3A4651;--shadow:rgba(0,0,0,.6);--focus:var(--mist-blue);--btn-bg:var(--mist-blue);--btn-fg:var(--ink);--box:color-mix(in srgb,var(--mist-blue) 16%,var(--surface));--cv-bg:color-mix(in srgb,var(--stone) 16%,var(--surface))}}
+:root[data-theme="dark"]{--bg:#1E252C;--surface:#28313A;--text:#D5E0E7;--head:var(--paper);--label:var(--mist-blue);--line:#3A4651;--shadow:rgba(0,0,0,.6);--focus:var(--mist-blue);--btn-bg:var(--mist-blue);--btn-fg:var(--ink);--box:color-mix(in srgb,var(--mist-blue) 16%,var(--surface));--cv-bg:color-mix(in srgb,var(--stone) 16%,var(--surface))}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:5.5rem}
+body{margin:0;background:var(--bg);color:var(--text);font:400 var(--fs-body)/1.7 var(--sans);overflow-x:clip}
+body:has(dialog[open]){overflow:hidden}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.1;color:var(--head);margin:0}
+h2{font-size:var(--fs-h2)}h3{font-size:var(--fs-h3)}
+p{margin:0 0 1em;max-width:65ch}
+a{color:var(--head);text-decoration:underline;text-decoration-color:var(--slate-blue);text-decoration-thickness:2px;text-underline-offset:.25em}
+.label{font:600 var(--fs-label)/1.5 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--label);margin:0 0 .75rem}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+::selection{background:var(--mist-blue);color:var(--ink)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+.sec{padding:clamp(2.75rem,6vw,4.75rem) 0}
+#projects{background:linear-gradient(var(--bg),color-mix(in srgb,var(--mist-blue) 24%,var(--bg)))}
+#about{background:color-mix(in srgb,var(--stone) 20%,var(--bg))}
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:3rem;padding:calc(6rem + env(safe-area-inset-top,0px)) clamp(1.25rem,5vw,3.5rem) calc(2rem + env(safe-area-inset-bottom,0px));color:var(--paper);background:radial-gradient(120% 90% at 70% 25%,#5C6A78 0%,var(--deep-slate) 45%,#343E48 100%);overflow:hidden;isolation:isolate;--focus:var(--mist-blue);--sx:0;--sy:4;--sb:10}
+.hero .label{color:var(--paper)}
+.net{position:absolute;inset:-6%;z-index:-2;opacity:.9;will-change:transform}
+@media(max-width:899px){.net{opacity:.45}}
+.net svg{width:100%;height:100%;display:block}
+.net line{stroke:var(--mist-blue);stroke-opacity:.45;stroke-width:1}
+/* hero workflow scene */
+.net pattern circle{fill:var(--mist-blue)}
+.net .dots{opacity:.1}
+.net .lane{stroke-opacity:.14;stroke-dasharray:2 8}
+.net .lt{fill:var(--mist-blue);opacity:.45;font:600 13px var(--sans);letter-spacing:.14em}
+.net path{fill:none;stroke:var(--mist-blue);stroke-opacity:.5;stroke-width:2;stroke-dasharray:6 8;animation:flow 2.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.net g circle{fill:rgba(43,52,61,.65);stroke:var(--slate-blue);stroke-width:2}
+.net g .in{fill:var(--slate-blue);stroke:none}
+.net g.r .in{fill:var(--stone)}
+.net g text{fill:var(--mist-blue);opacity:.75;font:600 14px var(--sans)}
+.net .pulse{fill:var(--mist-blue)}
+.rule{display:block;height:2px;background:linear-gradient(90deg,var(--slate-blue) 0 3rem,var(--line) 3rem);margin:.25rem 0 .35rem}
+.net.drift{animation:drift 26s ease-in-out infinite}
+@keyframes drift{50%{transform:translate3d(-16px,12px,0)}}
+.glow{position:absolute;left:0;top:0;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(181,200,212,.22),transparent 65%);z-index:-1;pointer-events:none;opacity:0;transition:opacity .6s;will-change:transform}
+.hero.live .glow{opacity:1}
+/* dynamic header: floating pill -> full-width rectangle (driven by scroll in JS) */
+.bar-wrap{position:fixed;top:0;left:0;right:0;z-index:30;padding-top:env(safe-area-inset-top,0px);pointer-events:none}
+.bar{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px;width:min(1040px,calc(100% - 1.5rem));margin:14px auto 0;padding:0 clamp(1rem,3vw,1.75rem);border-radius:32px;background:rgba(52,62,72,var(--a,.62));-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 10px 30px -14px rgba(0,0,0,.5);color:var(--paper);--focus:var(--mist-blue)}
+.brand{font:400 1.125rem/1 var(--serif);letter-spacing:-.01em;color:var(--paper);text-decoration:none;white-space:nowrap}
+.bs{display:none}
+.bar nav{display:flex;gap:clamp(.25rem,2vw,1.5rem)}
+@media(max-width:439px){.bl{display:none}.bs{display:inline}}
+@media(max-width:519px){.opt{display:none}}
+.hero::before,.hero::after{content:"";position:absolute;z-index:-3;pointer-events:none}
+.hero::before{right:-8%;top:-12%;width:62%;height:130%;background:linear-gradient(160deg,rgba(181,200,212,.2),rgba(114,138,160,.05) 65%,transparent);clip-path:polygon(38% 0,100% 0,100% 100%,0 100%)}
+.hero::after{left:-10%;bottom:-18%;width:70%;height:60%;background:linear-gradient(20deg,rgba(191,181,174,.2),transparent 70%);clip-path:polygon(0 100%,100% 0,100% 100%)}
+.hero-grid{flex:1;display:grid;gap:2.5rem;align-items:center}
+@media(min-width:1180px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+/* hero info cards, sitting in the workflow scene */
+.hcard{position:absolute;width:250px;padding:1rem 1.2rem 1.15rem;border:1px solid rgba(181,200,212,.3);border-radius:14px;background:rgba(43,52,61,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:var(--paper);font-size:.875rem;line-height:1.55;animation:hflt 9s ease-in-out infinite;animation-delay:var(--fd,0s)}
+.hcard::before{content:"";position:absolute;right:100%;top:1.45rem;width:56px;border-top:2px dashed rgba(181,200,212,.45)}
+.hcard::after{content:"";position:absolute;left:-5px;top:calc(1.45rem - 4px);width:9px;height:9px;border-radius:50%;background:var(--mist-blue)}
+.ct{font:600 .75rem/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mist-blue);margin:0 0 .6rem;padding-bottom:.55rem;border-bottom:1px solid rgba(181,200,212,.3)}
+.hcard ul{margin:0;padding:0;list-style:none}.hcard li{padding:.15rem 0}.hcard p{margin:0}
+.hc1{right:6%;top:17%}.hc2{right:25%;top:41%}.hc3{right:7%;top:65%}
+.hcard{animation:none;background:rgba(43,52,61,.4)}.hcard::before,.hcard::after{display:none}
+.hcard li+li{border-top:1px solid rgba(181,200,212,.2);margin-top:.35rem;padding-top:.35rem}
+.hero .loc{color:var(--paper);text-decoration-color:var(--mist-blue)}
+/* faceted mark beside "A look into my work" */
+.gem{width:.8em;height:.8em;vertical-align:-.06em;margin-right:.3em;overflow:visible;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.gem polygon{transform-box:view-box;transform-origin:50% 50%;transform:scale(0) rotate(-40deg);transition:transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i)*80ms)}
+.gem.on polygon{transform:none}
+.bridge h2:hover .gem{transform:rotate(60deg)}
+.gem .f1{fill:var(--mist-blue)}.gem .f2{fill:var(--slate-blue)}.gem .f3{fill:var(--deep-slate)}.gem .f4{fill:var(--stone)}
+@keyframes hflt{50%{transform:translateY(-8px)}}
+@media(max-width:1179px){.hcard{display:none}}
+.stage svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.stage path{fill:none;stroke:var(--mist-blue);stroke-opacity:.55;stroke-width:1.5;stroke-dasharray:3 5;vector-effect:non-scaling-stroke}
+.stage circle{fill:var(--mist-blue)}
+.card{position:absolute;transform:translate(-50%,-50%);max-width:34%;padding:.75rem 1rem;border:1px solid rgba(181,200,212,.5);border-radius:12px;background:rgba(43,52,61,.55);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:600 .75rem/1.4 var(--sans);letter-spacing:.06em;text-align:center;color:var(--paper);box-shadow:0 18px 40px -18px rgba(0,0,0,.6);animation:flt 7s ease-in-out infinite;animation-delay:var(--fd,0s)}
+.card::before{content:"";display:block;width:1.75rem;height:3px;border-radius:2px;background:var(--stone);margin:0 auto .5rem}
+@keyframes flt{50%{transform:translate(-50%,calc(-50% - 8px))}}
+.link{position:relative;display:inline-block;padding:.5rem .25rem;color:var(--paper);text-decoration:none;font:600 .8125rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.12em;transition:transform .3s}
+.link::after{content:"";position:absolute;left:.25rem;right:.25rem;bottom:.15rem;height:2px;background:var(--mist-blue);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.link:hover,.link:focus-visible{transform:scale(1.08)}
+.link:hover::after,.link:focus-visible::after{transform:scaleX(1)}
+.copy{max-width:900px}
+.name{font-size:var(--fs-h1);font-weight:500;color:#fff;letter-spacing:-.03em;display:flex;flex-wrap:wrap;column-gap:.28em;margin:.25rem 0 1.5rem}
+.name,.role{text-shadow:calc(var(--sx)*1px) calc(var(--sy)*1px) calc(var(--sb)*1px) rgba(20,26,32,.45),calc(var(--sx)*2.5px) calc(var(--sy)*2.5px) calc(var(--sb)*2.6px) rgba(20,26,32,.28)}
+.w{display:inline-block;white-space:nowrap}
+.l{display:inline-block;transition:transform .35s cubic-bezier(.2,.7,.2,1),color .35s}
+.l:hover{transform:translateY(-.08em);color:var(--mist-blue)}
+.role{font:600 clamp(.875rem,1.6vw,1rem)/1.5 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--paper);margin:0 0 .5rem}
+.tag{font:600 var(--fs-label)/1.6 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--paper);margin:0;max-width:none}
+.rise{opacity:0;transform:translateY(18px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+@keyframes rise{to{opacity:1;transform:none}}@keyframes fade{to{opacity:1}}
+.foot-hero{display:flex;justify-content:flex-end}
+.mag{--s:1;transform:translate(var(--mx,0),var(--my,0)) scale(var(--s));transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.explore{display:inline-flex;align-items:center;gap:.75rem;padding:.85rem 1.5rem;border:1px solid var(--mist-blue);border-radius:999px;background:rgba(43,52,61,.35);color:var(--paper);font:600 .8125rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.explore:hover,.explore:focus-visible{--s:1.1;box-shadow:0 0 0 5px rgba(181,200,212,.16),0 14px 34px rgba(0,0,0,.4)}
+.explore:active{--s:.97}
+.explore svg{width:1.1rem;height:1.1rem;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(4px)}}
+/* PROJECTS */
+.head{margin-bottom:2.5rem}
+.grid{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}.grid>li:last-child{grid-column:1/-1}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(6,1fr)}.grid>li{grid-column:span 2}.grid>li:nth-child(n+4){grid-column:span 3}}
+.bridge h2{font-size:clamp(2.5rem,7vw,5rem);font-weight:300}
+#bt{display:inline-block;will-change:transform}
+.bridge::after{content:"";display:block;width:4rem;height:3px;background:var(--stone);margin-top:1.25rem}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease;transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.tile{display:flex;flex-direction:column;gap:.6rem;width:100%;height:100%;min-height:230px;text-align:left;padding:1.75rem;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:14px;font:inherit;cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.tile:hover,.tile:focus-visible{transform:translateY(-4px) scale(1.03);box-shadow:0 22px 44px -16px var(--shadow);border-color:var(--slate-blue)}
+.tile p{margin:0;font-size:1rem}
+.tile .label{margin:0}
+.more{margin-top:auto;align-self:flex-start;padding:.5rem 1rem;border:1px solid var(--slate-blue);border-radius:999px;font:600 .75rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--head);opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s}
+.tile:hover .more,.tile:focus-visible .more{opacity:1;transform:none}
+@media(hover:none){.more{opacity:1;transform:none}}
+.tile.cv{background:var(--cv-bg)}
+/* ABOUT */
+.about{display:grid;gap:3rem;border-top:1px solid var(--line)}
+@media(min-width:860px){.about{grid-template-columns:1fr 1fr;gap:5rem}}
+.about h2{margin-bottom:1.5rem}
+.sg{margin-bottom:1rem;padding:1.25rem 1.4rem 1.4rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.sgh{font:600 1.0625rem/1.4 var(--sans);color:var(--head);margin:0 0 .9rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.chips li{padding:.35rem .9rem;border:1px solid var(--line);border-radius:999px;font-size:1rem;line-height:1.5;color:var(--head);background:var(--bg)}
+.facts{margin:2rem 0 0;display:grid;gap:1.25rem}
+.facts dt{font:600 var(--fs-label)/1.5 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--label)}
+.facts dd{margin:0}
+/* CONTACT */
+footer{border-top:1px solid var(--line);padding:clamp(3rem,7vw,5rem) 0 calc(2.5rem + env(safe-area-inset-bottom,0px))}
+footer ul{list-style:none;margin:1.5rem 0 3rem;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-size:1.125rem}
+footer small{color:var(--text)}
+/* DIALOGS */
+dialog{border:0;padding:0;border-radius:16px;width:min(760px,calc(100vw - 2rem));max-height:calc(100vh - 2rem);max-height:calc(100svh - 2rem);background:var(--surface);color:var(--text);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}}
+dialog::backdrop{background:rgba(30,37,44,.65);backdrop-filter:blur(3px)}
+.dlg{padding:clamp(1.5rem,4vw,2.75rem);position:relative}
+.x{position:absolute;top:.75rem;right:.75rem;width:2.75rem;height:2.75rem;border:0;border-radius:50%;background:transparent;color:var(--head);font-size:1.75rem;line-height:1;cursor:pointer;transition:background .2s}
+.x:hover{background:var(--line)}
+.dlg h2{font-size:clamp(1.75rem,4vw,2.25rem);margin:0 2.5rem 1.5rem 0}
+.dlg dt{font:600 var(--fs-label)/1.5 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--label);margin-top:1.4rem}
+.dlg dd{margin:.2rem 0 0;max-width:65ch}
+.fig{margin:2rem 0 0;padding:1.5rem;border:1px solid var(--line);border-radius:12px;text-align:center}
+.fig svg{width:100%;max-width:320px;height:auto}
+.fig rect{fill:var(--box);stroke:var(--slate-blue);stroke-width:1.5}
+.fig path{fill:none;stroke:var(--slate-blue);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.fig text{fill:var(--head);font:600 13px var(--sans)}
+.fig figcaption{margin-top:.75rem;font-size:.875rem}
+.btn{padding:.75rem 1.5rem;border:0;border-radius:999px;background:var(--btn-bg);color:var(--btn-fg);font:600 .8125rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.btn:hover,.btn:focus-visible{transform:scale(1.05);box-shadow:0 8px 22px -6px var(--shadow)}
+.cvbar{margin:0 3rem 1.5rem 0}
+.cv h3{font:600 var(--fs-label)/1.5 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--label);margin:1.75rem 0 .5rem;border-bottom:1px solid var(--line);padding-bottom:.3rem}
+.cv h4{font:600 1rem/1.5 var(--sans);margin:1rem 0 0;color:var(--head)}
+.cv p,.cv ul{margin:.3rem 0}.cv ul{padding-left:1.25rem}.cv li{margin:.2rem 0}
+.cv .sub{font-size:.9375rem}
+/* project write-ups open in the same centred popup as the CV */
+#pd .xh{margin-right:2.5rem}#pd .xh h2{margin:0}#pd .xh .rule{margin:1rem 0}#pd .xh .label{margin:0 0 1.25rem}
+#pd dl{margin:0}
+#pd dt{margin:0;padding-top:1rem;border-top:1px solid var(--line)}
+#pd dd{margin:.3rem 0 0;padding-bottom:1rem}
+@media(min-width:620px){#pd dl{display:grid;grid-template-columns:8.5rem 1fr;column-gap:1.5rem}#pd dt,#pd dd{margin:0;padding:1rem 0;border-top:1px solid var(--line)}}
+#pd .fig{margin-top:1.5rem;background:var(--bg)}
+/* personal note in About */
+.creed{margin:1.75rem 0 0;padding:1.25rem 0 1.25rem 1.25rem;border-left:3px solid var(--slate-blue);font-weight:600;font-size:1.125rem;line-height:1.65;color:var(--head)}
+.creed .label{display:block;margin-bottom:.5rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rise{transform:none;animation-name:fade}.rv{transform:none}.explore svg,.net.drift,dialog[open],.hcard,.net path{animation:none}.net .pulse{display:none}.gem polygon{transform:none!important;transition:none}.tile:hover,.tile:focus-visible{transform:none}}
+@media print{
+@page{margin:14mm}
+html,body{background:#fff!important;overflow:visible!important;height:auto!important}
+body>*:not(#cv){display:none!important}
+#cv:not([open]){display:none!important}
+#cv{position:static!important;display:block!important;width:auto;max-width:none;max-height:none;overflow:visible;box-shadow:none;border-radius:0;background:#fff;color:#1a1f24;animation:none}
+#cv .dlg{padding:0}#cv .cvbar,#cv .x{display:none!important}
+#cv h2,#cv h3,#cv h4{color:#1a1f24!important;border-color:#bbb!important}
+#cv{font-size:10.5pt;line-height:1.5}#cv h2{font-size:22pt;margin:0}
+#cv a{color:#1a1f24;text-decoration:none}}
+</style>
+</head>
+<body>
+
+<div class="bar-wrap"><header class="bar" id="bar">
+  <a class="brand" href="#top" data-scroll="#top" aria-label="Mahim Sathya Prakash, back to top"><span class="bl">Mahim Sathya Prakash</span><span class="bs" aria-hidden="true">MSP</span></a>
+  <nav aria-label="Primary"><a class="link opt" href="#top" data-scroll="#top">Home</a><a class="link" href="#about" data-scroll="#about">About me</a><a class="link" href="#projects" data-scroll="#projects">Projects</a><a class="link opt" href="#contact" data-scroll="#contact">Contact</a></nav>
+</header></div>
+
+<section class="hero" id="top" aria-label="Introduction">
+  <div class="net" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="hero-grid">
+  <div class="copy">
+    <p class="label rise" style="--d:.1s"><a class="loc" href="https://www.google.com/maps/place/Bengaluru,+Karnataka,+India" target="_blank" rel="noopener">Bengaluru, India<span style="position:absolute;left:-9999px"> (opens Google Maps in a new tab)</span></a></p>
+    <h1 class="name rise" id="name" style="--d:.3s">Mahim Sathya Prakash</h1>
+    <p class="role rise" style="--d:.6s">Adobe Workfront – Senior Developer</p>
+    <p class="tag rise" style="--d:.8s">Workflow automation | Enterprise integrations</p>
+  </div>
+  <div class="hcard hc1"><h2 class="ct">Role description</h2><p><strong>Senior Developer at Capgemini</strong>, building Workfront automation and connecting enterprise marketing platforms.</p></div>
+  <div class="hcard hc2"><h2 class="ct">Work done</h2><ul><li>Linked creative approvals to the asset library, so approved work is handed off cleanly</li><li>Automated day-to-day marketing operations across several enterprise systems</li><li>Built customer journeys with audience splits and A/B testing, demonstrating a clear use case across push, in-app, web and email</li></ul></div>
+  <div class="hcard hc3"><h2 class="ct">Tech stack</h2><p style="margin:0 0 .6rem">Hands-on across the martech stack: work management, automation, asset management and customer engagement.</p><ul><li>Adobe Workfront and Workfront Fusion</li><li>AEM Assets</li><li>Braze</li><li>Salesforce Marketing Cloud</li></ul></div>
+  </div>
+  <div class="foot-hero rise" style="--d:1.1s">
+    <a class="explore mag" data-mag data-scroll="#projects" href="#projects" aria-label="Explore more: scroll to projects">Explore more
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v13M4 11l6 6 6-6"/></svg></a>
+  </div>
+</section>
+
+<main>
+<section class="sec" id="projects" aria-labelledby="ph">
+  <div class="wrap">
+    <div class="head bridge"><h2 id="ph"><span id="bt"><svg class="gem" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><polygon class="f1" style="--i:0" points="50,50 50,4 90,27"/><polygon class="f2" style="--i:1" points="50,50 90,27 90,73"/><polygon class="f3" style="--i:2" points="50,50 90,73 50,96"/><polygon class="f4" style="--i:3" points="50,50 50,96 10,73"/><polygon class="f2" style="--i:4" points="50,50 10,73 10,27"/><polygon class="f1" style="--i:5" points="50,50 10,27 50,4"/></svg>A look into my work</span></h2></div>
+    <ul class="grid" id="grid"></ul>
+  </div>
+</section>
+
+<section class="sec" id="about" aria-labelledby="ah">
+  <div class="wrap about">
+    <div class="rv">
+      <p class="label">About</p>
+      <h2 id="ah">Reliable workflows, built carefully</h2>
+      <p>I’m a software developer at Capgemini with hands-on experience in Adobe Workfront and Workfront Fusion, building workflow automations and connecting enterprise marketing platforms.</p>
+      <p>My focus is practical: solving integration challenges and delivering reliable workflows. I’m an Adobe Certified Professional in Workfront Core and a Claude Certified Developer – Foundations.</p>
+      <p>In my own time I stay curious and exploratory across the wider martech stack, trying out platforms such as n8n, Claude and other automation and AI tools to see how they can make marketing operations faster and smarter.</p>
+      <p class="creed"><span class="label">A little about me</span>I’m driven by a continuous improvement mindset and hold myself to a high standard for every goal. My work ethic is simple: work as hard as I can, and let results come from taking good steps. I’ve applied these ideas throughout my life, and they will always be a core part of who I am.</p>
+      <dl class="facts">
+        <div><dt>Role</dt><dd><strong>Senior Developer, Capgemini</strong> (June 2026 – present). Promoted from Junior Developer (Nov 2024 – May 2026).</dd></div>
+        <div><dt>Certifications</dt><dd>Adobe Certified Professional in Workfront Core<br>Claude Certified Developer – Foundations (Anthropic)</dd></div>
+        <div><dt>Education</dt><dd>B.Tech in Electronics and Communication Engineering, PES University (2019 – 2023)</dd></div>
+      </dl>
+    </div>
+    <div class="rv" style="--d:.12s"><p class="label">Skills</p><div id="skills"></div></div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <p class="label">Contact</p>
+    <h2>Let’s talk</h2>
+    <ul>
+      <li><a href="mailto:mahimsprakash@gmail.com">mahimsprakash@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/mahimsp" target="_blank" rel="noopener">linkedin.com/in/mahimsp<span class="sr" style="position:absolute;left:-9999px"> (opens in a new tab)</span></a></li>
+    </ul>
+    <small>© Mahim Sathya Prakash · <a href="https://www.google.com/maps/place/Bengaluru,+Karnataka,+India" target="_blank" rel="noopener">Bengaluru, India</a></small>
+  </div>
+</footer>
+
+<dialog id="pd"></dialog>
+
+<!-- CV VIEW. "Download PDF" saves the embedded PDF (see CV_PDF in the script). -->
+<dialog id="cv" class="cv" aria-labelledby="cvt"><div class="dlg">
+  <button class="x" aria-label="Close CV" data-close>×</button>
+  <div class="cvbar"><button class="btn" id="pdf" type="button">Download PDF</button> <span id="pdfmsg" role="status" style="margin-left:.75rem;font-size:.9375rem"></span></div>
+  <h2 id="cvt">Mahim Sathya Prakash</h2>
+  <p class="sub"><strong>Adobe Workfront – Senior Developer</strong><br>Bengaluru, India · <a href="mailto:mahimsprakash@gmail.com">mahimsprakash@gmail.com</a> · <a href="https://www.linkedin.com/in/mahimsp" rel="noopener">linkedin.com/in/mahimsp</a></p>
+  <h3>Summary</h3>
+  <p>Software developer at Capgemini with hands-on experience in Adobe Workfront and Workfront Fusion, building workflow automations and connecting enterprise marketing platforms. Practical focus on solving integration challenges and delivering reliable workflows.</p>
+  <h3>Experience</h3>
+  <h4>Capgemini, Bengaluru</h4>
+  <p class="sub">Senior Developer, June 2026 – present<br>Junior Developer, Nov 2024 – May 2026</p>
+  <h4>Subway, Global Marketing and DAM team: Workfront Developer (May 2025 – present)</h4>
+  <ul>
+    <li>Demonstrated an end-to-end Workfront-to-AEM Assets proof of concept, connecting a complex approval workflow with AEM Assets so finalized creative assets could be handed off into the DAM platform.</li>
+    <li>Took individual-contributor ownership of the existing automation, maintaining and supporting workflows used by the global marketing and DAM team.</li>
+    <li>Built and refined Workfront Fusion automation flows across enterprise systems, with integrations involving ADO, AJO, Dynatrace and MM2.</li>
+    <li>Configured Workfront approval workflows, custom forms, layout templates and reporting for day-to-day marketing operations.</li>
+  </ul>
+  <h4>Astro, Malaysian digital entertainment platform: Developer (Dec 2024 – Mar 2025)</h4>
+  <ul>
+    <li>Developed a working Braze proof of concept with customer journeys using audience splits and A/B testing across mobile push, in-app messaging, web and email, demonstrating a clear business use case.</li>
+    <li>Explored integrations with Amazon S3 and TikTok as part of a cross-channel campaign demonstration.</li>
+  </ul>
+  <h3>Skills</h3><ul id="cvskills"></ul>
+  <h3>Certifications</h3><p>Adobe Certified Professional in Workfront Core<br>Claude Certified Developer – Foundations (Anthropic)</p>
+  <h3>Education</h3><p>B.Tech in Electronics and Communication Engineering, PES University (2019 – 2023)<br>Capstone: Interactive educational device for the visually impaired (refreshable braille display)</p>
+</div></dialog>
+
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s);
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+document.documentElement.classList.add('js');
+
+/* ---------- Content ---------- */
+const SKILLS={'Adobe and marketing platforms':['Adobe Workfront','Workfront Fusion','AEM Assets','Braze','Salesforce Marketing Cloud'],
+'Automation and integrations':['Workflow automation','Approval workflows','System integrations','Digital asset management'],
+'Martech exploration':['n8n','Claude','AI agents and automation','Audience segmentation','A/B testing'],
+'Programming and data':['JavaScript','Java','Python','SQL','Pandas','NumPy','Matplotlib'],
+'Frameworks and libraries':['Spring','Angular','Scikit-learn','TensorFlow','Keras']};
+const P=[
+{k:'Subway · Workfront Developer · May 2026 – present',t:'Workfront to AEM Assets',s:'Handing off finalized creative assets from an approval workflow into AEM Assets.',
+ ctx:'The global marketing and DAM team ran a complex approval workflow in Workfront, and finalized creative assets needed to reach the digital asset management platform.',
+ ch:'Connect the approval workflow with AEM Assets so finalized assets could be handed off into the DAM platform.',
+ ap:'I connected the Workfront approval workflow with AEM Assets end to end. Once the initial solution was built, I took individual-contributor ownership of the automation.',
+ out:'An end-to-end handoff from approval to AEM Assets. I now maintain and support the workflows the global marketing and DAM team uses.',
+ tools:'Adobe Workfront, AEM Assets',
+ flow:['Workfront approval workflow','Finalized creative assets','Handoff to DAM','AEM Assets']},
+{k:'Subway · Workfront Developer · May 2025 – June 2026',t:'Workfront Fusion automation across enterprise systems',s:'Fusion flows, approval workflows, forms and reporting for day-to-day marketing operations.',
+ ctx:'Marketing operations ran on Workfront and needed it to work with other enterprise systems.',
+ ch:'Keep work moving reliably between Workfront and systems such as ADO, AJO, Dynatrace and MM2.',
+ ap:'I built and refined Workfront Fusion automation flows across these systems. In Workfront, I configured approval workflows, custom forms, layout templates and reporting.',
+ out:'Fusion automation flows with integrations involving ADO, AJO, Dynatrace and MM2, plus a Workfront setup that supports day-to-day marketing operations.',
+ tools:'Adobe Workfront, Workfront Fusion, ADO, AJO, Dynatrace, MM2',
+ flow:['Workfront approvals and forms','Workfront Fusion scenarios','ADO, AJO, Dynatrace, MM2']},
+{k:'Astro · Developer · Dec 2024 – Mar 2025',t:'Braze cross-channel proof of concept',s:'Customer journeys with audience splits and A/B testing across four channels.',
+ ctx:'Astro, a Malaysian digital entertainment platform, wanted to see customer journeys working across several channels.',
+ ch:'Demonstrate a clear use case for customer journeys across mobile push, in-app messaging, web and email, with different audiences receiving different paths.',
+ ap:'I developed a working Braze proof of concept with customer journeys that used audience splits to route segments down different paths, and A/B testing to compare message variants. I also explored integrations with Amazon S3 and TikTok as part of a cross-channel campaign demonstration.',
+ out:'A working proof of concept showing segmented, A/B-tested customer journeys across mobile push, in-app messaging, web and email, with a clear use case for the business.',
+ tools:'Braze, Amazon S3, TikTok',
+ flow:['Audience split','A/B test variants','Push, in-app, web, email','Amazon S3 and TikTok']},
+/* CAPSTONE: from the Phase 1 report (Jan – May 2022). */
+{k:'PES University · Capstone, Phase 1 · Jan – May 2022',t:'Capstone: Interactive educational device for the visually impaired',s:'A refreshable braille display concept designed around micro servos.',
+ ctx:'My B.Tech capstone in Electronics and Communication Engineering at PES University, done as a team of four. Visual impairment is a leading cause of disability, and existing reading aids are often hard to access, not portable, or power-hungry.',
+ ch:'Propose a refreshable braille device that is more efficient and easier to use than options on the market. Each of the six braille dots has to move up and down independently to form different letters.',
+ ap:'We surveyed published braille displays and compared actuator options, including solenoids, electromagnetic and rotary designs, and micro servos. We chose six SG90 micro servos driven by a servo driver, using the tangential direction of rotation to move each pin linearly. Text in the selected language goes to the microcontroller, which converts it and drives the display.',
+ out:'Phase 1 delivered a finalized methodology, a block diagram and the hardware list for the device. Micro servos were chosen for their low energy use and because they are simple to build and maintain.',
+ tools:'Arduino Uno R3, SG90 micro servos (6), servo driver',
+ flow:['Text input in selected language','Arduino Uno R3 converts text','Servo driver','Six SG90 micro servos','Refreshable braille cell']}];
+
+/* DIAGRAM PLACEHOLDER: each project dialog draws its diagram inside <figure class="fig"> using flow().
+   To refine later, edit a project's `flow` labels above, or replace flow()'s output with your own <svg>. */
+const flow=a=>{const h=a.length*72-20;return `<svg viewBox="0 0 320 ${h}" role="img" aria-label="Flow: ${a.join(', then ')}">`+
+a.map((l,i)=>{const y=i*72,n=i<a.length-1;return `<rect x="20" y="${y}" width="280" height="52" rx="10"/><text x="160" y="${y+31}" text-anchor="middle">${l}</text>`+
+(n?`<path d="M160 ${y+52}V${y+70}M154 ${y+64}L160 ${y+71}L166 ${y+64}"/>`:'')}).join('')+'</svg>'};
+
+/* ---------- Render ---------- */
+const grid=$('#grid');
+grid.innerHTML=P.map((p,i)=>`<li class="rv"><button class="tile" data-i="${i}" aria-haspopup="dialog"><h3>${p.t}</h3><span class="rule"></span><span class="label">${p.k}</span><p>${p.s}</p><span class="more">See more</span></button></li>`).join('')+
+`<li class="rv"><button class="tile cv" data-i="cv" aria-haspopup="dialog"><h3>Download / View CV</h3><span class="rule"></span><span class="label">Curriculum vitae</span><p>A printable summary of my experience, skills, certifications and education.</p><span class="more">Open CV</span></button></li>`;
+const chips=o=>Object.entries(o).map(([g,a])=>`<div class="sg"><h3 class="sgh">${g}</h3><ul class="chips">${a.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('');
+$('#skills').innerHTML=chips(SKILLS);
+$('#cvskills').innerHTML=Object.entries(SKILLS).map(([g,a])=>`<li><strong>${g}:</strong> ${a.join(', ')}</li>`).join('');
+
+/* ---------- Dialogs (native <dialog>: focus trap, Esc, inert background) ---------- */
+const pd=$('#pd'),cv=$('#cv');
+pd.setAttribute('aria-labelledby','pdt');
+grid.addEventListener('click',e=>{const b=e.target.closest('.tile');if(!b)return;
+ if(b.dataset.i==='cv'){cv.showModal();return}
+ const p=P[b.dataset.i];
+ const row=(n,v)=>v?`<dt>${n}</dt><dd>${v}</dd>`:'';
+ pd.innerHTML=`<div class="dlg"><button class="x" aria-label="Close write-up" data-close>×</button><div class="xin"><div class="xh"><h2 id="pdt">${p.t}</h2><span class="rule"></span><p class="label">${p.k}</p></div><dl>${row('Context',p.ctx)}${row('Challenge',p.ch)}${row('Approach',p.ap)}${row('Outcome',p.out)}${row('Tools',p.tools)}${row('Next',p.note)}</dl><figure class="fig">${flow(p.flow)}<figcaption>Simplified, generic flow</figcaption></figure></div></div>`;
+ pd.showModal();pd.scrollTop=0});
+[pd,cv].forEach(d=>d.addEventListener('click',e=>{if(e.target===d||e.target.closest('[data-close]'))d.close()}));
+/* CV PDF: a one-page PDF is embedded below (base64). To use a newer CV, replace CV_PDF with your file's base64.
+   It is saved through the page's downloads capability; where that is unavailable, the browser print dialog is used instead. */
+const CV_PDF='JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL1RpbWVzLVJvbWFuIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChtYWlsdG86bWFoaW1zcHJha2FzaEBnbWFpbC5jb20pCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMTM0LjEyNTYgNzMzLjYzNTQgMjU0LjA5MTYgNzQ1LjAzNTQgXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL0EgPDwKL1MgL1VSSSAvVHlwZSAvQWN0aW9uIC9VUkkgKGh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9tYWhpbXNwKQo+PiAvQm9yZGVyIFsgMCAwIDAgXSAvUmVjdCBbIDI2Mi4wMTQ2IDczMy42MzU0IDM2Ni4wMTExIDc0NS4wMzU0IF0gL1N1YnR5cGUgL0xpbmsgL1R5cGUgL0Fubm90Cj4+CmVuZG9iago3IDAgb2JqCjw8Ci9Bbm5vdHMgWyA1IDAgUiA2IDAgUiBdIC9Db250ZW50cyAxMSAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCAxMCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgCiAgL1RyYW5zIDw8Cgo+PiAvVHlwZSAvUGFnZQo+PgplbmRvYmoKOCAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUgL1BhZ2VzIDEwIDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKOSAwIG9iago8PAovQXV0aG9yIChNYWhpbSBTYXRoeWEgUHJha2FzaCkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MTAyMjE3NDMzMCswMCcwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MTAyMjE3NDMzMCswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoTWFoaW0gU2F0aHlhIFByYWthc2ggXDIwNSBDVikgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDcgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAyMTUxCj4+CnN0cmVhbQpHYXUwRD5CZWRcJjpWcy9RcSthLkVVYTI3SCEzTyo6WFk/JUpZKTskUDhAWDg6YThXOUE0LFJhaGlTQWYsZF9Rc0UsbVxRUCVOakdSO1peKDVTSlg7ci1vT2NTPClYaFYjdV9jaiFjdCVtREpdJyMzMW8+LWRJJExYKTBlJDA2IVUqXDk/JjJxNyRxV2dKNiolZ2MhZiZlKkZSdD9MZCJYVE9vUXJWR2lBZyIoTiYoSydPP2ZEVDwjciUqPiRZMEkjYi83R3BxJzgjIy9nQC9MLEhJaTdLWG5Sbkh1U2w9JEU3dVlwKj49T2U5UkhrO1NvVW90YDo7UVhtOixkLl1sP0FfclcvaXUrVURNI1lMJHFvJjo2Y01CNExmOC8sOl0nW0UnWTspYkNsbSMtJWpQPy4mMSwvUztKM0NSRUAoaiZlUUB1Mi8jQGtaazQ3aEZBYHRKcEZJWU1nUydSYUxYaCpLTSs4ST1AQGhwWWlvPj5wJTFKXV1XWWJCXVtMOCR1aSp1Mz4nTGsmV21YaWlxaU5SUCtEXU9aZF09WD1GXl81NyhUQGlOdCxWJTtYcUhzT0tmNSNZTnM2MnI0LWNGcWUqOD5UdCpvOmlRclUwRydFLD5SIUBIQk0nPE1hSWhOYzBtOzFnTF9fK2toL1E4LidkLmJcNTMnSy1hMVIwSUonbVZjIU1DXz9HbVVPOS0qYjQ9Ry9Lam1GblE5RjsuUyk8OXFsZmBvJS1kT2E/dCNwYC9UOU4jLGxvPV5oM0pxYl9XIlkqRU0nI2NcXVImRU5ESiFrOD06OE5pVUQzPWw4TDRtSERMNyY3cTloVzJTV3UsYEZXVmtDSEEya3MsQGonMmQ6ZGQ8SlRIVWdLaUM+Wl4nSzAtL3FmTnRjP0ZUM1FwSUVjbFQ9X3I8ZV9tbCNXJEFaXEdFKk1COi9GKmZESUQvY2BqMmMnLjNeOk9YR2U4MDhkOU9yYGBCIUE7O3I+NS5ZSVFrYiRvYF9qIVk7PDFJOGlvLChKXSJRNy9hZmcyYyQ/PU1hMUhHMjE1b2cjKlljTDFIUWZZQDEvO0d0OklyZmptWlQoND4rXkpxNi07bz42MVE3O2lHXC0xUCthIiVzPGNUczwxW1s6QWpITERpWVc/Pjc/aHI4Z09uMGBtOW1mP0NdZDJvRmt1LmlKcG5dPWZHIi5qRVVuVS07PkFKQ3FuVyhHblRaOFdhMGlLXl4rVDcmUiJIVixgKyY/aD1PaWtcM2FpTks/W2sib0xlKSQ+R1osPEI7PUsnLjk7NiFELjdoSygsK0NRODwrNjVWNkVlIlFBXGBsND5HJk4zbzZDTU1JbkxHUWMqWkwwRixYUzUnTjU4UCYjJHBaNy5xQzlVUjlQLkFYKGQoQEJYOkVDRUlxMW9lVkNyKWopbjVCSE88R1s3JTYlTjhKV3E7Zi1gWjU2cHFTW0w3TFUoQWs9O01OJnI3YmI0Y0I6U3FIcytTUU9EK2lBWjc8UCE6N0UhbydDWDI8KUwyLG9PdWE2NHJYS0dbIXExMzNfRjkvWidaNipKWE9JdShUYEMuLDhucVk2YEhuQFopSmNBWnAuRDEzR2RDS2dpODJFaFdzJChaclBhQUhQb3VIUWZKT0tMTC1yRVtiMUpwIylzKXM1X2s+ZU9AYGk7Tmc0PUg4KTtEQWBEVE9fZSU9J21CIUBLQ2NWJjRdZThjKlhvVT9FcW9FPjpsUEFJJllzLSspRCwyQjYpNlRhbjxxQGJdZEBWJm4nZFsnMUlCJlhqbHA3VnAoQlpvL0Y2UEZzWFouZiZGSVZeYyEhRTJVIkFdTExGIzlFK0hRY1RhRFJEK3IhPVBRdWoyaDc0YEVrX25fWS9hQjNiUjcwUVMrQ21dSVY/QzFpXEpgUXNfcmBodW9cQDp0NE4xRldgV3QlX2JdI1lALyJQYFU3SXErbCMuZE9UcD4xQDxYMEI4WV1HMjwmKmZzYDw0KlhCLTFsOF1aOGp1VTthWStwSU9kQlEzQXJnSCc0VG5EQTs1cUFPWDFKRSgnVzIpOHBgKVU1LVxUYDRlSG8uJ0pCYnUsZ0gzS2BxPic9PEFsTS0qXTU+JDwyXFVGYjpgYiteLGNjZklfYjVrT0ZTcypXQy05MUJFXWVeSk5oWiZrTVJFLzpZaFE+Ky5lOyxBJmBIXkxPV2M9SkQ7MTBIXF1nY2RoSy03dUxVU0plNWsmWyciRzpcT2dcLTBwclQxLEFFOiwwMlVWKnFjMz1icUBGWGJHJWsiPUdDIkQ+cCZkLlYrLlJmUCFnPlUkNWtwcGwwXmg/YFZBUCkpQENEYFpAJ1VndCJBZjQ3MDpUamhWMzBxVSYtPkdaQkNuKicnSGhWX0ZkJkRoJGhoOSh1RideN0A2RCI5VyFEVic7PD1NPXNGV2YuJGZHKTpgSCcyOnBdS091Xi4odTYhalVJPTJpWXBYLSQtVEtxQzZNQUxLO2JpMDluQVxGQFdAZm5SL2JrOTFRKixaU05xcicwWV5WKEA1SkZfQWxNJjsiP1onWiM3NVVScU9oXjRXX1tmaEAkXyRIbTk/PHQ9Yjs9dEwnSDdgW0ZBLVgjLl1oQ0YxMSVrRVtwPCMmSiVVRUdwZjg+UmY9LjZpNmVwcFBRL2BERnA/VUtUZSdKTTwwXTRlKzdVPDcmODxMV0Zpc2JBYC02RU5bJy5HTGdqKS1RJkRvMC4wZUxZITdRZ1EnKzc+SG9aXFtWIlBGIjZVQSI8MTkqY2V1cmZxclhJOSFsc3NeLydeVDA3V2NJY21QPylIUkNzRDFqMFstNl5lQll0ZzlsXD8lXSMhSUgyXFFwbzlPQy83U0k9Oj9HMl4vaThkK15tPUFYfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBuIAowMDAwMDAwMjE5IDAwMDAwIG4gCjAwMDAwMDAzMjggMDAwMDAgbiAKMDAwMDAwMDQ0MCAwMDAwMCBuIAowMDAwMDAwNjIyIDAwMDAwIG4gCjAwMDAwMDA4MDkgMDAwMDAgbiAKMDAwMDAwMTAzOCAwMDAwMCBuIAowMDAwMDAxMTA3IDAwMDAwIG4gCjAwMDAwMDE0MDkgMDAwMDAgbiAKMDAwMDAwMTQ2OSAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzw1ZDIzYzI5MDBiZmJmZmUwOTQwNjkxYWUwOGJlOTJhNT48NWQyM2MyOTAwYmZiZmZlMDk0MDY5MWFlMDhiZTkyYTU+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDkgMCBSCi9Sb290IDggMCBSCi9TaXplIDEyCj4+CnN0YXJ0eHJlZgozNzEyCiUlRU9GCg==';
+const dlP=window.claude&&claude.use?claude.use('downloads').catch(()=>null):Promise.resolve(null);
+const pdfBtn=$('#pdf'),pdfMsg=$('#pdfmsg');
+pdfBtn.addEventListener('click',async()=>{
+ const dl=await dlP;
+ if(!dl){const b=Uint8Array.from(atob(CV_PDF),c=>c.charCodeAt(0)),u=URL.createObjectURL(new Blob([b],{type:'application/pdf'})),a=document.createElement('a');a.href=u;a.download='Mahim_Sathya_Prakash_CV.pdf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);return}
+ const bytes=Uint8Array.from(atob(CV_PDF),c=>c.charCodeAt(0));
+ pdfBtn.disabled=true;pdfMsg.textContent='';
+ try{await dl.save({filename:'Mahim_Sathya_Prakash_CV.pdf',data:new Blob([bytes])});pdfMsg.textContent='CV downloaded.'}
+ catch(err){const c=err&&err.code;
+  if(c==='declined'){}
+  else if(c==='rate_limited')pdfMsg.textContent='A download prompt is already open.';
+  else window.print()}
+ finally{pdfBtn.disabled=false}});
+
+/* ---------- Smooth scroll links ---------- */
+document.querySelectorAll('[data-scroll]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();$(a.dataset.scroll).scrollIntoView({behavior:rm?'auto':'smooth'})}));
+
+/* ---------- Scroll reveal ---------- */
+const rv=[...document.querySelectorAll('.rv')];
+if('IntersectionObserver' in window){
+ const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){const l=en.target;l.classList.add('in');io.unobserve(l)}}),{threshold:.12});
+ rv.forEach((el,i)=>{if(el.parentElement===grid)el.style.setProperty('--d',(i%2)*.12+'s');io.observe(el)});
+}else rv.forEach(el=>el.classList.add('in'));
+
+/* ---------- Hero: name letters ---------- */
+const nm=$('#name'),txt=nm.textContent;nm.setAttribute('aria-label',txt);
+nm.innerHTML=txt.split(' ').map(w=>`<span class="w" aria-hidden="true">${[...w].map(c=>`<span class="l">${c}</span>`).join('')}</span>`).join('');
+
+/* ---------- Hero: network motif ---------- */
+const hero=$('.hero'),net=$('.net'),glow=$('.glow');
+/* HERO BACKGROUND: a drifting network across the whole hero, drawn on a canvas, with workflow modules
+   (WM: label, x, y as fractions of the hero) linked by WK, and the hero text cards wired into the net. */
+const WM=[['Request intake',.1,.16],['Router',.24,.4],['Proof review',.42,.12],['Custom form',.3,.84],['Approval',.55,.58],['AEM Assets',.7,.1],['Notify team',.86,.9],['Report',.95,.48]];
+const WK=[[0,1],[1,2],[1,3],[2,4],[3,4],[4,5],[4,6],[6,7],[5,7]];
+const hc=[...document.querySelectorAll('.hcard')],ptr={x:0,y:0},cvs=document.createElement('canvas'),g=cvs.getContext('2d');
+net.innerHTML='';net.appendChild(cvs);
+const MI='181,200,212',SL='114,138,160',SN='191,181,174';
+let W=0,H=0,nd=[],an=[],mb=0,hv=true;
+function build(){const dpr=Math.min(2,devicePixelRatio||1);W=net.offsetWidth;H=net.offsetHeight;cvs.width=W*dpr;cvs.height=H*dpr;cvs.style.cssText=`width:${W}px;height:${H}px;display:block`;g.setTransform(dpr,0,0,dpr,0,0);
+ nd=Array.from({length:Math.round(W*H/20000)},()=>({x:Math.random()*W,y:Math.random()*H,p:Math.random()*7,a:6+Math.random()*12}));mb=nd.length;
+ WM.forEach(([l,x,y])=>nd.push({x:x*W,y:y*H,p:Math.random()*7,a:5,l}));
+ an=hc.filter(c=>c.offsetParent).map(c=>{const x=c.offsetLeft-net.offsetLeft,y=c.offsetTop-net.offsetTop+24;
+  return{c,x,y,p:Math.random()*7,near:nd.map((o,i)=>[Math.hypot(o.x-x,o.y-y),i]).sort((a,b)=>a[0]-b[0]).slice(0,3).map(v=>v[1])}})}
+function draw(t){g.clearRect(0,0,W,H);
+ const P=nd.map(o=>[o.x+Math.cos(t/4200+o.p)*o.a,o.y+Math.sin(t/5200+o.p)*o.a]),n=P.length;g.lineWidth=1;
+ for(let i=0;i<n;i++)for(let j=i+1;j<n;j++){const d=Math.hypot(P[i][0]-P[j][0],P[i][1]-P[j][1]);if(d<160){g.strokeStyle=`rgba(${MI},${((1-d/160)*.3).toFixed(3)})`;g.beginPath();g.moveTo(P[i][0],P[i][1]);g.lineTo(P[j][0],P[j][1]);g.stroke()}}
+ g.setLineDash([6,8]);g.lineDashOffset=-t/60;g.lineWidth=1.6;g.strokeStyle=`rgba(${MI},.5)`;
+ WK.forEach(([a,b])=>{const A=P[mb+a],B=P[mb+b],m=(A[0]+B[0])/2;g.beginPath();g.moveTo(A[0],A[1]);g.bezierCurveTo(m,A[1],m,B[1],B[0],B[1]);g.stroke()});
+ an.forEach(o=>{const dx=Math.cos(t/5000+o.p)*6,dy=Math.sin(t/4300+o.p)*8,x=o.x+dx,y=o.y+dy;o.c.style.translate=`${dx+ptr.x}px ${dy+ptr.y}px`;
+  g.strokeStyle=`rgba(${MI},.5)`;o.near.forEach(i=>{g.beginPath();g.moveTo(x,y);g.lineTo(P[i][0],P[i][1]);g.stroke()});
+  g.fillStyle=`rgb(${MI})`;g.beginPath();g.arc(x,y,4.5,0,7);g.fill()});
+ g.setLineDash([]);
+ P.forEach(([x,y],i)=>{const o=nd[i];
+  if(o.l){g.fillStyle='rgba(43,52,61,.75)';g.strokeStyle=`rgb(${SL})`;g.lineWidth=2;g.beginPath();g.arc(x,y,16,0,7);g.fill();g.stroke();
+   g.fillStyle=`rgb(${i%2?SN:SL})`;g.beginPath();g.arc(x,y,6,0,7);g.fill();
+   g.fillStyle=`rgba(${MI},.6)`;g.font='600 12px Inter,sans-serif';g.textAlign='center';g.fillText(o.l,x,y+32)}
+  else{g.fillStyle=`rgba(${i%2?SL:MI},.7)`;g.beginPath();g.arc(x,y,i%3?2.5:3.5,0,7);g.fill()}})}
+build();addEventListener('resize',()=>{build();if(rm)draw(0)});
+new IntersectionObserver(([e])=>hv=e.isIntersecting).observe(hero);
+const loop=t=>{if(hv)draw(t);requestAnimationFrame(loop)};
+rm?draw(0):requestAnimationFrame(loop);
+
+if(!rm){
+ if(fine){
+  let tx=.5,ty=.5,cx=.5,cy=.5,vis=true,on=false;
+  const r=()=>hero.getBoundingClientRect(),cards=[...document.querySelectorAll('.hcard')];
+  /* track the pointer over the hero and the top bar; on leaving, effects stay where they were and pick back up */
+  addEventListener('pointermove',e=>{const b=r();if(e.clientY<b.top||e.clientY>b.bottom)return;tx=(e.clientX-b.left)/b.width;ty=(e.clientY-b.top)/b.height;if(!on){on=true;hero.classList.add('live')}},{passive:true});
+  document.documentElement.addEventListener('pointerleave',()=>{on=false;hero.classList.remove('live')});
+  new IntersectionObserver(([en])=>vis=en.isIntersecting).observe(hero);
+  const tick=()=>{
+   if(vis){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;const b=r(),d=Math.hypot(cx-.5,cy-.5);
+    net.style.transform=`translate3d(${(.5-cx)*44}px,${(.5-cy)*32}px,0)`;
+    ptr.x=(.5-cx)*44;ptr.y=(.5-cy)*32;
+    glow.style.transform=`translate3d(${cx*b.width-280}px,${cy*b.height-280}px,0)`;
+    hero.style.setProperty('--sx',((cx-.5)*-26).toFixed(2));
+    hero.style.setProperty('--sy',((cy-.5)*-26).toFixed(2));
+    hero.style.setProperty('--sb',(8+d*16).toFixed(2));}
+   requestAnimationFrame(tick)};
+  requestAnimationFrame(tick);
+  /* magnetic buttons */
+  const mags=[...document.querySelectorAll('[data-mag]')];
+  addEventListener('pointermove',e=>{mags.forEach(m=>{const b=m.getBoundingClientRect(),dx=e.clientX-(b.left+b.width/2),dy=e.clientY-(b.top+b.height/2);
+   const near=Math.hypot(dx,dy)<b.width/2+70;m.style.setProperty('--mx',near?Math.max(-8,Math.min(8,dx*.18))+'px':'0px');m.style.setProperty('--my',near?Math.max(-8,Math.min(8,dy*.18))+'px':'0px')})},{passive:true});
+ }else net.classList.add('drift');
+}
+/* ---------- Dynamic header: floating pill settles into a full-width rectangle on scroll / Explore ---------- */
+if(rm)document.querySelectorAll('animateMotion').forEach(a=>a.remove());
+const bar=$('#bar'),bt=$('#bt'),gem=$('.gem'),bridge=$('.bridge'),cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),lp=(a,b,t)=>a+(b-a)*t;
+let pc=0,raf=0;
+function paint(){const W=document.documentElement.clientWidth,tg=cl(scrollY/(innerHeight*.7));pc=rm?tg:pc+(tg-pc)*.12;if(Math.abs(tg-pc)<.003)pc=tg;
+ bar.style.width=lp(Math.min(1040,W-24),W,pc)+'px';bar.style.marginTop=lp(14,0,pc)+'px';bar.style.borderRadius=lp(32,0,pc)+'px';bar.style.setProperty('--a',lp(.62,.97,pc).toFixed(3));
+ /* "A look into my work" eases down into place as the section scrolls in */
+ const t=cl((innerHeight*.95-bridge.getBoundingClientRect().top)/(innerHeight*.55));
+ bt.style.transform=rm?'':`translateY(${(t-1)*110}px)`;bt.style.opacity=rm?1:Math.min(1,t*1.6);if(rm||t>.6)gem.classList.add('on');
+ return pc!==tg}
+const kick=()=>{raf||(raf=requestAnimationFrame(()=>{raf=0;if(paint())kick()}))};
+addEventListener('scroll',kick,{passive:true});addEventListener('resize',kick);kick();
+/* touch tap feedback */
+document.addEventListener('pointerdown',e=>{const t=e.target.closest('.explore,.link');if(t&&e.pointerType==='touch'){t.style.setProperty('--s','.96');setTimeout(()=>t.style.removeProperty('--s'),180)}});
+})();
+</script>
+</body>
+</html>
